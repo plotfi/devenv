@@ -9,7 +9,6 @@ FROM ubuntu:focal
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update \
- && apt dist-upgrade \
  && apt install -y --no-install-recommends \
       cmake ninja-build clang clang-format clangd clang-tidy lldb lld tig vim tmux git \
       python3-distutils \
