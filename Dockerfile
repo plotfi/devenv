@@ -15,4 +15,6 @@ RUN apt-get update \
       ripgrep fd-find \
       net-tools curl wget rsync \
       htop ca-certificates sudo less unzip \
+    && cd \
+    && git clone https://github.com/plotfi/dotfiles.git
 ENV DEBIAN_FRONTEND=dialog
