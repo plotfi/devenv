@@ -5,11 +5,8 @@
 
 # To fully customize the contents of this image, use the following Dockerfile instead:
 # https://github.com/microsoft/vscode-dev-containers/tree/v0.117.1/containers/ubuntu-18.04-git/.devcontainer/Dockerfile
-# FROM ubuntu:focal
-FROM swift:focal
+FROM ubuntu:focal
 
-# ** [Optional] Uncomment this section to install additional packages. **
-#
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update \
  && apt dist-upgrade \
