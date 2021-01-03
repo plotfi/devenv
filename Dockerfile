@@ -8,14 +8,11 @@
 FROM ubuntu:focal
 
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt update \
- && apt install -y --no-install-recommends \
+RUN apt-get update \
+    && apt install -y --no-install-recommends \
       cmake ninja-build clang clang-format clangd clang-tidy lldb lld tig vim tmux git \
       python3-distutils \
       ripgrep fd-find \
       net-tools curl wget rsync \
       htop ca-certificates sudo less unzip \
- && cd \
- && git clone https://github.com/plotfi/dotfiles.git \
 ENV DEBIAN_FRONTEND=dialog
-
